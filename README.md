@@ -1,7 +1,7 @@
 # Google Search page clone
 
 ### screenshot
-<img src="assets/img/Screenshot.png" width="300">
+<img src="assets/img/Screenshot.png" width="600">
 
 ## Installation
 
