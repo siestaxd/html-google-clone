@@ -1,0 +1,371 @@
+body {
+    background-color: #1F1F1F;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar start */
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navbar.navbar-itemlist {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-itemlist .navbar-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.navbar-itemlist .navbar-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-itemlist .navbar-item:hover a {
+    text-decoration: underline;
+}
+
+.navbar-itemlist .navbar-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-itemlist .navbar-icon:hover {
+    cursor: pointer;
+    background-color: #2f2f2f;
+    border-radius: 50%
+}
+
+.navbar-itemlist .navbar-icon .info {
+    display: none;
+}
+
+.navbar-itemlist .navbar-icon:hover .info {
+    display: block;
+    position: absolute;
+    top: 60px;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.navbar-itemlist .navbar-icon .info p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.navbar-itemlist .navbar-icon i {
+    font-size: 32px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.navbar-itemlist .navbar-icon .profile-pic {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.navbar-itemlist .navbar-icon .menu {
+    display: none;
+}
+
+.navbar-itemlist .navbar-icon .menu.active {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    width: 300px;
+    max-height: fit-content;
+    background-color: #2f2f2f;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-itemlist .navbar-icon .menu.active .container {
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .container h6{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .container h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .container button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #91b9ed;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .container button:hover {
+    background-color: #5d80ae;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #222838;
+    margin-bottom: 10px;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .app-list {
+    background-color: #1F1F1F;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .app-list .app {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-itemlist .navbar-icon .menu.active .app-list .app:hover {
+    cursor: pointer;
+    background-color: #2f2f2f;
+}
+
+.app-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.app-list .app .app-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.app-list .app .app-icon img {
+    width: 60%;
+    height: 70%;
+}
+
+.app-list .app .app-name {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* navbar end */
+
+/* main start */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.container .searchbar {
+    margin-top: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 25px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container .searchbar:hover {
+    background-color: #2f2f2f;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container .searchbar .searchbar-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.container .searchbar .searchbar-icon i {
+    cursor: default;
+    font-size: 24px;
+    font-weight: 900;
+    color: gray;
+}
+
+.container .searchbar .searchbar-icon img {
+    cursor: pointer;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.container .searchbar .searchbar-icon .searchbar-icon-info {
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.container .searchbar .searchbar-icon:hover .searchbar-icon-info {
+    display: block;
+    position: absolute;
+    background-color: #1F1F1F;
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 70px;
+    padding: 5px 10px;
+}
+
+.container .searchbar .searchbar-icon:hover .searchbar-icon-info p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.container .searchbar .searchbar-input {
+    width: 100%;
+    height: 32px;
+}
+
+.container .searchbar .searchbar-input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.container .btn {
+    margin-top: 25px;
+}
+
+.container .btn button {
+    background-color: #2f2f2f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.container .btn button:hover {
+    cursor: pointer;
+    border: 1px solid gray;
+}
+/* main end */
+
+/* footer start */
+.footer {
+    background-color: #303030;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer .footer-header {
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    border-bottom: 2px solid rgb(80, 80, 80);
+}
+
+.footer .footer-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer .footer-body {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-body .footer-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer-body .footer-list li {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.footer .footer-body .footer-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .footer-body .footer-list li:hover a {
+    text-decoration: underline;
+}
+/* footer end */
