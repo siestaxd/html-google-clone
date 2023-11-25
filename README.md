@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-
+git clone https://github.com/siestaxd/html-google-clone.git
 ```
 
 ## Usage
